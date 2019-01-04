@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewContact">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/photo"
+            android:scaleType="center"
+            android:src="@drawable/person" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="@string/friend_name"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                tools:text="姓名" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType=""
+                tools:ignore="LabelFor"
+                tools:targetApi="o"
+                tools:text="name" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/friend_phone"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="phone"
+                tools:ignore="LabelFor"
+                tools:targetApi="o"
+                tools:text="phone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textEmail"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="@string/friend_email"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                tools:text="电子邮件" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                tools:ignore="LabelFor"
+                tools:targetApi="o"
+                tools:text="email" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textCompany"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="@string/friend_company"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                tools:text="公司" />
+
+            <EditText
+                android:id="@+id/editCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType=""
+                tools:ignore="LabelFor"
+                tools:targetApi="o"
+                tools:text="Company" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textGroup"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="@string/friend_group"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_confirm" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_cancel" />
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

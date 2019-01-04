@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateContact">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_pic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/photo"
+            android:scaleType="center"
+            android:src="@drawable/person"
+            app:srcCompat="@drawable/person" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/friend_name"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:visibility="visible"
+                tools:text="姓名" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType=""
+                tools:ignore="LabelFor"
+                tools:targetApi="o"
+                tools:text="name" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/friend_phone"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="phone"
+                tools:ignore="LabelFor"
+                tools:targetApi="o"
+                tools:text="phone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textEmail"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/friend_email"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:visibility="visible"
+                tools:text="电子邮件" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                tools:ignore="LabelFor"
+                tools:targetApi="o"
+                tools:text="email" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textCompany"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/friend_company"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:visibility="visible"
+                tools:text="公司" />
+
+            <EditText
+                android:id="@+id/editCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType=""
+                tools:ignore="LabelFor"
+                tools:targetApi="o"
+                tools:text="Company" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textGroup"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/friend_group"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:visibility="visible"
+                tools:text="群组" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </TableRow>
+
+
+        <Button
+            android:id="@+id/button_modify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_modify"
+            tools:text="修改" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_delete"
+            tools:text="删除" />
+
+    </TableLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingcall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_call" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingsendmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingcall"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+
+</android.support.constraint.ConstraintLayout>

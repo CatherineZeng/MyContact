@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.catherine.mycontact.MainActivity">
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="80"
+        android:title="@string/action_search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_showgroup"
+        android:checkable="true"
+        android:icon="@drawable/group"
+        android:orderInCategory="100"
+        android:title="@string/action_groups"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_settings"
+        android:checkable="true"
+        android:icon="@drawable/setting"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom" />
+</menu>
