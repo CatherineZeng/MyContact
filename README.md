@@ -1,5 +1,5 @@
 # MyContact
-A hoomwork of Android class.
+A homework of Android class.
 
 主要功能包括：
 
